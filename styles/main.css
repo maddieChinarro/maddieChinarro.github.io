@@ -72,11 +72,14 @@
 
 body {
     background-color:rgb(176, 176, 176);
-    background-image: url(../assets/LowResMap.png);
+    background-image: url(../assets/img/mapBackground.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .appBar {
@@ -100,7 +103,7 @@ body {
 }
 
 article {
-    background-image: url(../assets/background.jpg);
+    background-image: url(../assets/img/scrollBackground.jpg);
     margin: 2% 20%;
     padding: 1.5% 13%;
     box-shadow: 0px 0px 10px 10px #49494967;
@@ -108,7 +111,6 @@ article {
     color: rgb(70, 40, 19);
     line-height: 1.4em;
     font-size: 16px;
-    
 }
 
 .article__title {
@@ -134,7 +136,9 @@ footer {
     width: 100%;
     height: 6rem;
     text-align: center;
-    align-content: center; 
+    align-content: center;
+    position: relative;
+    bottom: 0;
 }
 
 footer p {
