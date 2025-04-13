@@ -62,14 +62,6 @@
     font-style: normal;
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-
 body {
     background-color:rgb(176, 176, 176);
     background-image: url(../assets/img/mapBackground.png);
@@ -79,28 +71,66 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr;
+    margin: 0;
+    padding: 0;
 }
 
-.appBar {
+.navHeader {
     background-color: rgba(0, 0, 0, 0.877);
-    width: 100%;
     height: 8rem;
-    text-align: center;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.appBar__nav {
-    float: left;
-    padding-left: 4rem;
+.navBar {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 2rem;
 }
 
-.appBar a {
-    text-decoration: none;
+.navBar__item {
     font-family: "im_fell_english_scregular";
-    font-size: 20px;
+    text-decoration: none;
+    font-size: 23px;
+    padding-bottom: 0.6rem;
     color: white;
 }
+
+.navBar__dropdown {
+    position: relative;
+}
+.navBar__dropdown:hover > .navBar__dropdownContent{
+    display: flex;
+}
+
+.navBar__dropdownContent {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    width: max-content;
+}
+
+.navBar__dropdownButton {
+    font-family: "im_fell_english_scregular";
+    text-decoration: none;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    background-color: inherit;
+    padding: 0.4rem;
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: rgb(129, 129, 129);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 4px 4px 5px #2e2e2e8d;
+}
+.navBar__dropdownButton:hover { background-color: rgb(230, 230, 230);}
+.navBar__dropdownButton:active { transform: translate3d(1px, 1px, 0)}
+
 
 article {
     background-image: url(../assets/img/scrollBackground.jpg);
@@ -130,6 +160,28 @@ article a {
     font-family: "source_sans_prosemibold";
 }
 
+.gloss {
+    background-image: url(../assets/img/scrollBackground.jpg);
+    display: flex;
+    justify-content: center;
+    margin: 2% 20%;
+    padding: 1% 13%;
+    box-shadow: 0px 0px 10px 10px #49494967;
+    color: rgb(70, 40, 19);
+    text-align: center;
+    flex-direction: column;
+}
+
+.gloss__section {
+    padding: 1.5rem;
+}
+
+.gloss__section > .article__content {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 
 footer {
     background-color: rgba(0, 0, 0, 0.877);
@@ -142,16 +194,52 @@ footer {
 }
 
 footer p {
-    float: left;
-    padding-left: 4rem;
+    float: right;
+    padding-right: 6rem;
     font-family: "im_fell_english_scregular";
     font-size: 17px;
     color: white;
 }
 
 @media (max-width:480px) {
+    .navHeader {
+        height: auto;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+    }
+
+    .navBar {
+        display: flex;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .navBar__dropdown {
+        display: none;
+    }
+
     article {
         margin: 0;
         padding: 1rem 1rem;
+        min-height: calc(100vh - 230px);
+    }
+
+    .gloss {
+        margin: 0;
+        padding-bottom: 3rem;
+        min-height: calc(100vh - 230px);
+    }
+
+    .gloss__section > .article__content {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap column;
+        gap: 0.5rem;
+    }
+
+    footer p {
+        float: none;
+        padding-left: 0;
     }
 }
