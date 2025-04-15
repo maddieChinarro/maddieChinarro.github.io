@@ -204,7 +204,7 @@ footer p {
 @media (max-width:480px) {
     body {
         background-image: unset;
-        background-color: #90A1A2;
+        background-image: url(../assets/img/scrollBackground.jpg);
         min-height: 0;
         height: 100vh;
     }
@@ -239,9 +239,9 @@ footer p {
 
     article {
         margin: 0;
-        padding: 1rem 1rem;  
-        min-height: 100%;
-        box-sizing: border-box;
+        padding: 1rem 1rem;
+        background-image: unset;  
+        box-shadow: none;
     }
 
     .gloss {
@@ -263,6 +263,7 @@ footer p {
 
     footer p {
         float: none;
+        font-size: 14px;
         padding: 0;
         margin: 0.8rem;
     }
