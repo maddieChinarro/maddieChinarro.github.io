@@ -203,10 +203,8 @@ footer p {
 
 @media (max-width:480px) {
     body {
-        background-image: unset;
         background-image: url(../assets/img/scrollBackground.jpg);
-        min-height: 0;
-        height: 100vh;
+        background-attachment: scroll;
     }
 
     .navHeader {
