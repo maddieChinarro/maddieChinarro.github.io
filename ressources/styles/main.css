@@ -1,70 +1,70 @@
 @font-face {
     font-family: 'im_fell_english_scregular';
-    src: url('../assets/fonts/imfellenglishsc-regular-webfont.woff2') format('woff2'),
-         url('../assets/fonts/imfellenglishsc-regular-webfont.woff') format('woff');
+    src: url('/ressources/fonts/imfellenglishsc-regular-webfont.woff2') format('woff2'),
+         url('/ressources/fonts/imfellenglishsc-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'source_sans_probold';
-    src: url('../assets/fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
-         url('../assets/fonts/sourcesanspro-bold-webfont.woff') format('woff');
+    src: url('/ressources/fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('/ressources/fonts/sourcesanspro-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'source_sans_probold_italic';
-    src: url('../assets/fonts/sourcesanspro-boldit-webfont.woff2') format('woff2'),
-         url('../assets/fonts/sourcesanspro-boldit-webfont.woff') format('woff');
+    src: url('/ressources/fonts/sourcesanspro-boldit-webfont.woff2') format('woff2'),
+         url('/ressources/fonts/sourcesanspro-boldit-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'source_sans_proitalic';
-    src: url('../assets/fonts/sourcesanspro-it-webfont.woff2') format('woff2'),
-         url('../assets/fonts/sourcesanspro-it-webfont.woff') format('woff');
+    src: url('/ressources/fonts/sourcesanspro-it-webfont.woff2') format('woff2'),
+         url('/ressources/fonts/sourcesanspro-it-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'source_sans_prolight';
-    src: url('../assets/fonts/sourcesanspro-light-webfont.woff2') format('woff2'),
-         url('../assets/fonts/sourcesanspro-light-webfont.woff') format('woff');
+    src: url('/ressources/fonts/sourcesanspro-light-webfont.woff2') format('woff2'),
+         url('/ressources/fonts/sourcesanspro-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'source_sans_prolight_italic';
-    src: url('../assets/fonts/sourcesanspro-lightit-webfont.woff2') format('woff2'),
-         url('../assets/fonts/sourcesanspro-lightit-webfont.woff') format('woff');
+    src: url('/ressources/fonts/sourcesanspro-lightit-webfont.woff2') format('woff2'),
+         url('/ressources/fonts/sourcesanspro-lightit-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'source_sans_proregular';
-    src: url('../assets/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('../assets/fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    src: url('/ressources/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('/ressources/fonts/sourcesanspro-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'source_sans_prosemibold';
-    src: url('../assets/fonts/sourcesanspro-semibold-webfont.woff2') format('woff2'),
-         url('../assets/fonts/sourcesanspro-semibold-webfont.woff') format('woff');
+    src: url('/ressources/fonts/sourcesanspro-semibold-webfont.woff2') format('woff2'),
+         url('/ressources/fonts/sourcesanspro-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
     background-color:rgb(176, 176, 176);
-    background-image: url(../assets/img/mapBackground.png);
+    background-image: url(/ressources/img/mapBackground.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,7 +133,7 @@ body {
 
 
 article {
-    background-image: url(../assets/img/scrollBackground.jpg);
+    background-image: url(/ressources/img/scrollBackground.jpg);
     margin: 2% 20%;
     padding: 1.5% 13%;
     box-shadow: 0px 0px 10px 10px #49494967;
@@ -161,7 +161,7 @@ article a {
 }
 
 .gloss {
-    background-image: url(../assets/img/scrollBackground.jpg);
+    background-image: url(/ressources/img/scrollBackground.jpg);
     display: flex;
     justify-content: center;
     margin: 2% 20%;
@@ -203,7 +203,7 @@ footer p {
 
 @media (max-width:480px) {
     body {
-        background-image: url(../assets/img/scrollBackground.jpg);
+        background-image: url(/ressources/img/scrollBackground.jpg);
         background-attachment: scroll;
     }
 
