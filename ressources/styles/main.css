@@ -64,7 +64,7 @@
 
 body {
     background-color:rgb(176, 176, 176);
-    background-image: url(/ressources/img/mapBackground.png);
+    background-image: url(/ressources/img/mapBackground_2048.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ body {
 
 .navBar {
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(7, auto);
     gap: 2rem;
 }
 
@@ -131,6 +131,11 @@ body {
 .navBar__dropdownButton:hover { background-color: rgb(230, 230, 230);}
 .navBar__dropdownButton:active { transform: translate3d(1px, 1px, 0)}
 
+
+.carte {
+    height: 100%;
+    width: 100%;
+}
 
 article {
     background-image: url(/ressources/img/scrollBackground.jpg);
@@ -229,6 +234,15 @@ footer p {
     .navBar__item {
         font-size: 18px;
         padding: 0;
+    }
+
+    .carte__container {
+        overflow: scroll;
+    }
+
+    .carte {
+        height: auto;
+        width: auto;
     }
 
     main {
