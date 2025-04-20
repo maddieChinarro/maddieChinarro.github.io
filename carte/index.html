@@ -2,8 +2,13 @@
 <html lang="fr" prefix="og: https://ogp.me/ns#">
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="/ressources/styles/carte.css" />
 
-        <link rel="stylesheet" type="text/css" href="/ressources/styles/main.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+        <script src="/ressources/scripts/map.js" defer></script>
+         
 
         <title>Carte de Ral-Thorin</title>
         
@@ -29,49 +34,10 @@
 
     </head>
     <body>
-        <div class="navHeader">
-            <nav class="navBar">
-                <a class="navBar__item" href="/">Accueil</a>
-                <a class="navBar__item active" href="/carte/">Carte</a>
-                <a class="navBar__item" href="/glossaire">Glossaire</a>
-                <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#regions">Régions</a>
-                    <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/regions/aman-ylith">Aman Ylith</a>
-                        <a class="navBar__dropdownButton" href="/regions/karak-uol">Karak Uol</a>
-                        <a class="navBar__dropdownButton" href="/regions/val-brise">Val-Brisé</a>
-                    </div>
-                </div>
-                <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#villes">Villes</a>
-                    <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/villes/eauclaire">Eauclaire</a>
-                        <a class="navBar__dropdownButton" href="/villes/havregel">Havregel</a>
-                        <a class="navBar__dropdownButton" href="/villes/thaldrassin">Thaldrassin</a>
-                        <a class="navBar__dropdownButton" href="/villes/valimar">Valimar</a>
-                    </div>
-                </div>
-                <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#lieux">Lieux</a>
-                    <div class="navBar__dropdownContent">
-                        <!-- A remplir quand besoin -->
-                    </div>
-                </div>
-                <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#personnes">Personnes</a>
-                    <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/personnes/eol">Eol</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
+        <nav>
+            <a class="homepageButton" href="/">Accueil</a>
+        </nav>
 
-        <main class="carte__container">
-            <img class="carte" src="/ressources/img/mapBackground_2048.png" />
-        </main>
-
-        <footer>
-            <p>Aesy</p>
-        </footer>
+        <div id="map"></div>
     </body>
 </html>

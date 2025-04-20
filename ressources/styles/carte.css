@@ -1,0 +1,60 @@
+@import url(/ressources/styles/fonts.css);
+
+html, body {margin: 0; padding: 0;}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    font-family: "im_fell_english_scregular";
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav a {
+    font-family: "im_fell_english_scregular";
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background-color: inherit;
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: #432818da;
+    background-color: #432818da;
+    box-shadow: 0px 0px 5px 5px #1717178d;
+    cursor: pointer;
+    padding: 0.3em 1em 0.3em 1em;
+    z-index: 1;
+}
+
+.leaflet-touch .leaflet-bar a {
+    padding: 0.3em;
+    box-shadow: 0px 0px 5px 5px #1717178d;
+}
+.leaflet-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.leaflet-popup-close-button {
+    padding: 0;
+    box-shadow: none;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: rgb(31, 31, 31);
+}
+
+@media (max-width:480px) {
+    a {
+        font-size: 20px;
+    }
+}
