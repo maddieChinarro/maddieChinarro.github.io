@@ -80,11 +80,11 @@ article {
     font-size: 16px;
 }
 
-.article__title {
+.article__title, .article__subtitle {
     font-family: "im_fell_english_scregular";
-    font-size: 25px;
-    margin: 2rem;
-}
+    font-size: 38px;
+    margin-top: 1.5rem;
+} .article__subtitle {font-size: 25px; margin-top: 2.6rem;}
 
 article p {
     font-family: "source_sans_proregular";
