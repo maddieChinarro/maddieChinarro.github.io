@@ -4,6 +4,7 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="stylesheet" type="text/css" href="/ressources/styles/main.css" />
+        <script src="/ressources/scripts/links.js" defer></script>
 
         <title>Karak Uol</title>
         
@@ -32,36 +33,36 @@
     <body>
         <div class="navHeader">
             <nav class="navBar">
-                <a class="navBar__item active" href="/">Accueil</a>
-                <a class="navBar__item" href="/carte/">Carte</a>
-                <a class="navBar__item" href="/glossaire">Glossaire</a>
+                <a class="navBar__item" id="ralThorin">Accueil</a>
+                <a class="navBar__item" id="carte">Carte</a>
+                <a class="navBar__item" id="categories">Catégories</a>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#regions">Régions</a>
+                    <a class="navBar__item" id="regions">Régions</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/regions/aman-ylith">Aman Ylith</a>
-                        <a class="navBar__dropdownButton" href="/regions/karak-uol">Karak Uol</a>
-                        <a class="navBar__dropdownButton" href="/regions/val-brise">Val-Brisé</a>
+                        <a class="navBar__dropdownButton" id="amanYlith">Aman Ylith</a>
+                        <a class="navBar__dropdownButton" id="karakUol">Karak Uol</a>
+                        <a class="navBar__dropdownButton" id="valBrise">Val-Brisé</a>
                     </div>
                 </div>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#villes">Villes</a>
+                    <a class="navBar__item" id="villes">Villes</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/villes/eauclaire">Eauclaire</a>
-                        <a class="navBar__dropdownButton" href="/villes/havregel">Havregel</a>
-                        <a class="navBar__dropdownButton" href="/villes/thaldrassin">Thaldrassin</a>
-                        <a class="navBar__dropdownButton" href="/villes/valimar">Valimar</a>
+                        <a class="navBar__dropdownButton" id="eauclaire">Eauclaire</a>
+                        <a class="navBar__dropdownButton" id="havregel">Havregel</a>
+                        <a class="navBar__dropdownButton" id="thaldrassin">Thaldrassin</a>
+                        <a class="navBar__dropdownButton" id="valimar">Valimar</a>
                     </div>
                 </div>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#lieux">Lieux</a>
+                    <a class="navBar__item" id="lieux">Lieux</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/lieux/villages/lorebois">Lorebois</a>
+                        <a class="navBar__dropdownButton" id="lorebois">Lorebois</a>
                     </div>
                 </div>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#personnes">Personnes</a>
+                    <a class="navBar__item" id="personnages">Personnages</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/personnes/eol">Eol</a>
+                        <a class="navBar__dropdownButton" id="eol">Eol</a>
                     </div>
                 </div>
             </nav>
@@ -75,13 +76,13 @@
                 </header>
                 <section class="article__content">
                     <p>
-                        Karak Uol est un royaume nain situé au nord de <a href="/">Ral-Thorin</a>. Véritable noyau commercial du continent, presque tout l'import et l'export vers Faerun passe par le port de la capitale, <a href="/villes/havregel">Havregel</a>, et son fjord inhospitalier.
+                        Karak Uol est un royaume nain situé au nord de <a id="ralThorin">Ral-Thorin</a>. Véritable noyau commercial du continent, presque tout l'import et l'export vers Faerun passe par le port de la capitale, <a id="havregel">Havregel</a>, et son fjord inhospitalier.
                     </p>
                     <p>
-                        Il comporte notamment la majorité de la chaine montagneuse de Kaz Unthol au nord, avec <a href="/villes/havregel">Havregel</a> à son centre, les plaines gelés du val de Ventfroid au Centre-Est, la taïga sauvage de Krak Anath à l'Ouest et la toundra de Terre-Morte au Sud.
+                        Il comporte notamment la majorité de la chaine montagneuse de Kaz Unthol au nord, avec <a id="havregel">Havregel</a> à son centre, les plaines gelés du val de Ventfroid au Centre-Est, la taïga sauvage de Krak Anath à l'Ouest et la toundra de Terre-Morte au Sud.
                     </p>
                     <p>
-                        Le royaume est dirigé par un conseil de guildes marchandes et artisanes ancestrales ayant établis <a href="/villes/havregel">Havregel</a>.
+                        Le royaume est dirigé par un conseil de guildes marchandes et artisanes ancestrales ayant établis <a id="havregel">Havregel</a>.
                     </p>
                 </section>
             </article>

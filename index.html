@@ -4,6 +4,7 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="stylesheet" type="text/css" href="/ressources/styles/main.css" />
+        <script src="/ressources/scripts/links.js" defer></script>
 
         <title>Ral-Thorin</title>
         
@@ -31,36 +32,36 @@
     <body>
         <div class="navHeader">
             <nav class="navBar">
-                <a class="navBar__item active" href="/">Accueil</a>
-                <a class="navBar__item" href="/carte/">Carte</a>
-                <a class="navBar__item" href="/glossaire">Glossaire</a>
+                <a class="navBar__item" id="ralThorin">Accueil</a>
+                <a class="navBar__item" id="carte">Carte</a>
+                <a class="navBar__item" id="categories">Catégories</a>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#regions">Régions</a>
+                    <a class="navBar__item" id="regions">Régions</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/regions/aman-ylith">Aman Ylith</a>
-                        <a class="navBar__dropdownButton" href="/regions/karak-uol">Karak Uol</a>
-                        <a class="navBar__dropdownButton" href="/regions/val-brise">Val-Brisé</a>
+                        <a class="navBar__dropdownButton" id="amanYlith">Aman Ylith</a>
+                        <a class="navBar__dropdownButton" id="karakUol">Karak Uol</a>
+                        <a class="navBar__dropdownButton" id="valBrise">Val-Brisé</a>
                     </div>
                 </div>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#villes">Villes</a>
+                    <a class="navBar__item" id="villes">Villes</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/villes/eauclaire">Eauclaire</a>
-                        <a class="navBar__dropdownButton" href="/villes/havregel">Havregel</a>
-                        <a class="navBar__dropdownButton" href="/villes/thaldrassin">Thaldrassin</a>
-                        <a class="navBar__dropdownButton" href="/villes/valimar">Valimar</a>
+                        <a class="navBar__dropdownButton" id="eauclaire">Eauclaire</a>
+                        <a class="navBar__dropdownButton" id="havregel">Havregel</a>
+                        <a class="navBar__dropdownButton" id="thaldrassin">Thaldrassin</a>
+                        <a class="navBar__dropdownButton" id="valimar">Valimar</a>
                     </div>
                 </div>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#lieux">Lieux</a>
+                    <a class="navBar__item" id="lieux">Lieux</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/lieux/villages/lorebois">Lorebois</a>
+                        <a class="navBar__dropdownButton" id="lorebois">Lorebois</a>
                     </div>
                 </div>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#personnes">Personnes</a>
+                    <a class="navBar__item" id="personnages">Personnages</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/personnes/eol">Eol</a>
+                        <a class="navBar__dropdownButton" id="eol">Eol</a>
                     </div>
                 </div>
             </nav>
@@ -78,19 +79,19 @@
                         Les légendes racontent que parmi les déserts et badlands, une graine fut plantée par les archfées Titania et Obéron. La jeune pousse pris vite racine, et ces dernières grandirent sans fin, tel un souffle de vie balayant le continent, donnant vie à de nouveaux écosystèmes entiers, pleins de vie. 
                     </p>
                     <p>
-                        À l'est, les forêts d'<a href="/regions/aman-ylith">Aman Ylith</a> s'étendent. Là où la flore et la faune vivent en harmonie, jouant toutes deux d'une diversité sans égal. La cité de <a href="/villes/thaldrassin">Thaldrassin</a> y fut construite, au pied même de l'arbre monde, par des Eladrin venues du Feywild pour admirer la création de la reine de l'été et du seigneur vert. C'est aujourd'hui une cité méritocratique dirigée par un conseil d'archimages et d'archidruides, où l'étude de l'arcane et du druidisme y est tenue en plus haute estime. La région est un lieu féérique souvent comparé au Feywild lui-même, où nombres créatures magiques vivent en tant que membres à part entière de la société.
+                        À l'est, les forêts d'<a id="amanYlith">Aman Ylith</a> s'étendent. Là où la flore et la faune vivent en harmonie, jouant toutes deux d'une diversité sans égal. La cité de <a id="thaldrassin">Thaldrassin</a> y fut construite, au pied même de l'arbre monde, par des Eladrin venues du Feywild pour admirer la création de la reine de l'été et du seigneur vert. C'est aujourd'hui une cité méritocratique dirigée par un conseil d'archimages et d'archidruides, où l'étude de l'arcane et du druidisme y est tenue en plus haute estime. La région est un lieu féérique souvent comparé au Feywild lui-même, où nombres créatures magiques vivent en tant que membres à part entière de la société.
                     </p>
                     <p>    
-                        Au centre se trouve <a href="/regions/val-brise">Val-Brisé</a>, au climat tempéré et où la vie est paisible. On y trouve nombres forêts, cours d'eaux et collines. Il y a plusieurs citée-états et petits royaumes, comme <a href="/villes/valimar">Valimar</a>, Eden, les cités jumelles ou le royaume de Loth.
+                        Au centre se trouve <a id="valBrise">Val-Brisé</a>, au climat tempéré et où la vie est paisible. On y trouve nombres forêts, cours d'eaux et collines. Il y a plusieurs citée-états et petits royaumes, comme <a id="valimar">Valimar</a>, Eden, les cités jumelles ou le royaume de Loth.
                     </p>
                     <p>    
-                        Au nord, le royaume de <a href="/regions/karak-uol">Karak Uol</a> s'étend sous les montagnes de Kaz Unthol, avec <a href="/villes/havregel">Havregel</a> à son centre. <a href="/regions/karak-uol">Karak Uol</a> est considéré comme l'un des plus grands royaumes nains de Toril, non pas par sa taille, mais par sa puissance, tant économique, académique et militaire. Avec <a href="/villes/havregel">Havregel</a> comme capitale, dont le port dans le fjord éternel d'An Uol est une merveille d'ingénierie permettant aux navires de traverser l'immense étendue de glace. C'est le port principal de Ral-Thorin, et l'un des rares permettant l'accès au monde extérieur. Au sud-ouest du royaume se trouve la taïga de Krak Anath, territoire ancestral des peuples barbares, au sud est et centre s'étendent des plaines enneigées, et entre la région nordique et <a href="/regions/val-brise">Val-Brisé</a> se trouve une toundra.
+                        Au nord, le royaume de <a id="karakUol">Karak Uol</a> s'étend sous les montagnes de Kaz Unthol, avec <a id="havregel">Havregel</a> à son centre. <a id="karakUol">Karak Uol</a> est considéré comme l'un des plus grands royaumes nains de Toril, non pas par sa taille, mais par sa puissance, tant économique, académique et militaire. Avec <a id="havregel">Havregel</a> comme capitale, dont le port dans le fjord éternel d'An Uol est une merveille d'ingénierie permettant aux navires de traverser l'immense étendue de glace. C'est le port principal de Ral-Thorin, et l'un des rares permettant l'accès au monde extérieur. Au sud-ouest du royaume se trouve la taïga de Krak Anath, territoire ancestral des peuples barbares, au sud est et centre s'étendent des plaines enneigées, et entre la région nordique et <a id="valBrise">Val-Brisé</a> se trouve une toundra.
                     </p>
                     <p>    
                         La région Ouest de Ral-Thorin est peu connue du reste du continent. Rares sont ceux qui survivent à la traversée du désert, et encore plus rares sont ceux qui en reviennent. 
                     </p>
                     <p>
-                        Ral Thorin est connue comme une terre mystérieuse et dangereuse et nombres légendes existent à son sujet. L'accès au continent par le reste du monde ne s'est fait qu'il y a quelques centaines d'années, du fait des terribles dangers entourant le continent. Frappée constamment par des tempêtes meurtrières incessantes, puissants maelstroms, cyclones, volcans et parfois même créatures marines. Aujourd'hui deux ports permettent le commerce, tourisme et immigration entre Ral Thorin et Faerun, celui d'<a href="/villes/havregel">Havregel</a> à travers le fjord, et celui d'<a href="/villes/eauclaire">Eauclaire</a> en <a href="/regions/aman-ylith">Aman Ylith</a>, dont l'accès est permis en certaines occasions grâce à de puissants sortilèges de <a href="/villes/thaldrassin">Thaldrassin</a>.
+                        Ral Thorin est connue comme une terre mystérieuse et dangereuse et nombres légendes existent à son sujet. L'accès au continent par le reste du monde ne s'est fait qu'il y a quelques centaines d'années, du fait des terribles dangers entourant le continent. Frappée constamment par des tempêtes meurtrières incessantes, puissants maelstroms, cyclones, volcans et parfois même créatures marines. Aujourd'hui deux ports permettent le commerce, tourisme et immigration entre Ral Thorin et Faerun, celui d'<a id="havregel">Havregel</a> à travers le fjord, et celui d'<a id="eauclaire">Eauclaire</a> en <a id="amanYlith">Aman Ylith</a>, dont l'accès est permis en certaines occasions grâce à de puissants sortilèges de <a id="thaldrassin">Thaldrassin</a>.
                     </p>
                     <p>
                         Depuis des années, la paix et le calme règne sur Ral Thorin, les conflits se font rares, l'économie fleurit et le climat est doux. Mais depuis peu, les esprits commencent à s'agiter, la faune migre depuis l'est comme jamais auparavant. Dans les villages, des couvre-feux se mettent en place, et dans les villes les gens verrouillent le porte de jour comme de nuit... Les disparitions se font nombreuses et les armées se préparent au conflit... Pour les plus perspicaces, un orage se prépare.

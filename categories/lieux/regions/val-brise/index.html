@@ -4,6 +4,7 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="stylesheet" type="text/css" href="/ressources/styles/main.css" />
+        <script src="/ressources/scripts/links.js" defer></script>
 
         <title>Val-Brisé</title>
         
@@ -32,36 +33,36 @@
     <body>
         <div class="navHeader">
             <nav class="navBar">
-                <a class="navBar__item active" href="/">Accueil</a>
-                <a class="navBar__item" href="/carte/">Carte</a>
-                <a class="navBar__item" href="/glossaire">Glossaire</a>
+                <a class="navBar__item" id="ralThorin">Accueil</a>
+                <a class="navBar__item" id="carte">Carte</a>
+                <a class="navBar__item" id="categories">Catégories</a>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#regions">Régions</a>
+                    <a class="navBar__item" id="regions">Régions</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/regions/aman-ylith">Aman Ylith</a>
-                        <a class="navBar__dropdownButton" href="/regions/karak-uol">Karak Uol</a>
-                        <a class="navBar__dropdownButton" href="/regions/val-brise">Val-Brisé</a>
+                        <a class="navBar__dropdownButton" id="amanYlith">Aman Ylith</a>
+                        <a class="navBar__dropdownButton" id="karakUol">Karak Uol</a>
+                        <a class="navBar__dropdownButton" id="valBrise">Val-Brisé</a>
                     </div>
                 </div>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#villes">Villes</a>
+                    <a class="navBar__item" id="villes">Villes</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/villes/eauclaire">Eauclaire</a>
-                        <a class="navBar__dropdownButton" href="/villes/havregel">Havregel</a>
-                        <a class="navBar__dropdownButton" href="/villes/thaldrassin">Thaldrassin</a>
-                        <a class="navBar__dropdownButton" href="/villes/valimar">Valimar</a>
+                        <a class="navBar__dropdownButton" id="eauclaire">Eauclaire</a>
+                        <a class="navBar__dropdownButton" id="havregel">Havregel</a>
+                        <a class="navBar__dropdownButton" id="thaldrassin">Thaldrassin</a>
+                        <a class="navBar__dropdownButton" id="valimar">Valimar</a>
                     </div>
                 </div>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#lieux">Lieux</a>
+                    <a class="navBar__item" id="lieux">Lieux</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/lieux/villages/lorebois">Lorebois</a>
+                        <a class="navBar__dropdownButton" id="lorebois">Lorebois</a>
                     </div>
                 </div>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" href="/glossaire#personnes">Personnes</a>
+                    <a class="navBar__item" id="personnages">Personnages</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" href="/personnes/eol">Eol</a>
+                        <a class="navBar__dropdownButton" id="eol">Eol</a>
                     </div>
                 </div>
             </nav>
@@ -75,7 +76,7 @@
                 </header>
                 <section class="article__content">
                     <p>
-                        Val-Brisé est la région centrale de <a href="/">Ral-Thorin</a>. C'est une région paisible et tempérée, où les hivers sont calmes et les étés doux. On y trouve nombres forêts, cours d'eaux et collines. Il y a plusieurs citée-états et petits royaumes, comme <a href="/villes/valimar">Valimar</a>, Eden, les cités jumelles ou le royaume de Loth.
+                        Val-Brisé est la région centrale de <a id="ralThorin">Ral-Thorin</a>. C'est une région paisible et tempérée, où les hivers sont calmes et les étés doux. On y trouve nombres forêts, cours d'eaux et collines. Il y a plusieurs citée-états et petits royaumes, comme <a id="valimar">Valimar</a>, Eden, les cités jumelles ou le royaume de Loth.
                     </p>
                 </section>
             </article>
