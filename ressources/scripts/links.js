@@ -17,16 +17,17 @@ for (var i = 0; i < categories.length; i++) {
 
 var lieux = document.querySelectorAll('[id=lieux]');
 for (var i = 0; i < lieux.length; i++) {
-    lieux[i].href = "/categories#lieux";
+    lieux[i].href = "/categories/lieux/";
 }
 
 var personnages = document.querySelectorAll('[id=personnages]');
 for (var i = 0; i < personnages.length; i++) {
-    personnages[i].href = "/categories#personnagesAnchor";
+    personnages[i].href = "/categories/personnages/";
 }
 
 // Lieux :
 
+/*
 var regions = document.querySelectorAll('[id=regions]');
 for (var i = 0; i < regions.length; i++) {
     regions[i].href = "/categories#regionsAnchor";
@@ -41,6 +42,7 @@ var villages = document.querySelectorAll('[id=villages]');
 for (var i = 0; i < villes.length; i++) {
     villages[i].href = "/categories#villagesAnchor";
 }
+*/
 
 // Régions :
 
@@ -89,12 +91,12 @@ for (var i = 0; i < lorebois.length; i++) {
 }
 
 // Personnages :
-
+/*
 var divinites = document.querySelectorAll('[id=divinites]');
 for (var i = 0; i < divinites.length; i++) {
     divinites[i].href = "/categories#divinitesAnchor";
 }
-
+*/
 // Divinités :
 
 var eol = document.querySelectorAll('[id=eol]');

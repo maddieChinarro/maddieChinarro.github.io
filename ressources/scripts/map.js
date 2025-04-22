@@ -18,12 +18,20 @@ if (screenType.matches) {
 
 const valimar = L.marker([540, 800]).addTo(map);
 valimar.bindPopup("<a href='/categories/lieux/villes/valimar/'>Valimar</a>").openPopup();
+
 const thaldrassin = L.marker([528, 1846]).addTo(map);
 thaldrassin.bindPopup("<a href='/categories/lieux/villes/thaldrassin/'>Thaldrassin</a>").openPopup();
+
+const havregel = L.marker([1285, 910]).addTo(map);
+havregel.bindPopup("<a href='/categories/lieux/villes/havregel/'>Havregel</a>").openPopup();
+
 const eauclaire = L.marker([625, 1696]).addTo(map);
 eauclaire.bindPopup("<a href='/categories/lieux/villes/eauclaire/'>Lorebois</a>").openPopup();
+
 const lorebois = L.marker([525, 1118]).addTo(map);
 lorebois.bindPopup("<a href='/categories/lieux/villages/lorebois/'>Lorebois</a>").openPopup();
+
+
 
 map.fitBounds(bounds);
 
