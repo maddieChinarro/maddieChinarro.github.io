@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://ral-thorin.quest/</loc>
+</url>
+<url>
+  <loc>https://ral-thorin.quest/carte/</loc>
+</url>
+<url>
+  <loc>https://ral-thorin.quest/categories/</loc>
+</url>
+<url>
+  <loc>https://ral-thorin.quest/categories/personnages/divinites/eol/</loc>
+</url>
+<url>
+  <loc>https://ral-thorin.quest/categories/lieux/regions/aman-ylith/</loc>
+</url>
+<url>
+  <loc>https://ral-thorin.quest/categories/lieux/regions/karak-uol/</loc>
+</url>
+<url>
+  <loc>https://ral-thorin.quest/categories/lieux/regions/val-brise/</loc>
+</url>
+<url>
+  <loc>https://ral-thorin.quest/categories/lieux/villes/eauclaire/</loc>
+</url>
+<url>
+  <loc>https://ral-thorin.quest/categories/lieux/villes/havregel/</loc>
+</url>
+<url>
+  <loc>https://ral-thorin.quest/categories/lieux/villes/thaldrassin/</loc>
+</url>
+<url>
+  <loc>https://ral-thorin.quest/categories/lieux/villes/valimar/</loc>
+</url>
+<url>
+  <loc>https://ral-thorin.quest/categories/lieux/villages/lorebois/</loc>
+</url>
+
+
+</urlset>
