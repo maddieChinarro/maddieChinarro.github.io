@@ -23,8 +23,7 @@ body {
 }
 
 .navBar {
-    display: grid;
-    grid-template-columns: repeat(7, auto);
+    display: flex;
     gap: 2rem;
 }
 
@@ -52,7 +51,7 @@ body {
     width: max-content;
 }
 
-.navBar__dropdownButton {
+.button {
     font-family: "im_fell_english_scregular";
     text-decoration: none;
     font-size: 23px;
@@ -66,10 +65,10 @@ body {
     cursor: pointer;
     box-shadow: 4px 4px 5px #2e2e2e8d;
 }
-.navBar__dropdownButton:hover { background-color: rgb(230, 230, 230);}
-.navBar__dropdownButton:active { transform: translate3d(1px, 1px, 0)}
+.button:hover { background-color: rgb(230, 230, 230);}
+.button:active { transform: translate3d(1px, 1px, 0)}
 
-article {
+article, .cat {
     background-image: url(/ressources/img/scrollBackground.jpg);
     margin: 2% 20%;
     padding: 1.5% 13%;
@@ -80,15 +79,19 @@ article {
     font-size: 16px;
 }
 
+.article__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .article__title, .article__subtitle {
     font-family: "im_fell_english_scregular";
     font-size: 38px;
-    margin-top: 1.5rem;
-} .article__subtitle {font-size: 25px; margin-top: 2.6rem;}
+} .article__subtitle {font-size: 25px;}
 
 article p {
     font-family: "source_sans_proregular";
-    margin: 1rem;
 }
 
 article a {
@@ -97,26 +100,26 @@ article a {
     font-family: "source_sans_prosemibold";
 }
 
-.gloss {
-    background-image: url(/ressources/img/scrollBackground.jpg);
+.cat {
     display: flex;
-    justify-content: center;
-    margin: 2% 20%;
-    padding: 1% 13%;
-    box-shadow: 0px 0px 10px 10px #49494967;
-    color: rgb(70, 40, 19);
-    text-align: center;
     flex-direction: column;
+    gap: 2rem;
 }
 
-.gloss__section {
-    padding: 1.5rem;
-}
-
-.gloss__section > .article__content {
+.cat__div {
     display: flex;
+    flex-flow: column;
+}
+
+.cat__subDiv > .article__content {
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     gap: 1rem;
+}
+
+.cat__subDiv {
+    padding: 0.5rem;
 }
 
 
@@ -153,7 +156,6 @@ footer p {
     }
 
     .navBar {
-        display: flex;
         padding: 1rem;
         line-height: normal;
         text-align: center;
@@ -179,12 +181,12 @@ footer p {
         box-shadow: none;
     }
 
-    .gloss {
+    .cat {
         margin: 0;
         padding-bottom: 3rem;
     }
 
-    .gloss__section > .article__content {
+    .cat__subDiv > .article__content {
         display: flex;
         flex-direction: row;
         flex-flow: wrap column;

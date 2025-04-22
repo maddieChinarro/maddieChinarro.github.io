@@ -31,87 +31,75 @@
 
     </head>
     <body>
-        <div class="navHeader">
+        <header class="navHeader">
             <nav class="navBar">
                 <a class="navBar__item" id="ralThorin">Accueil</a>
                 <a class="navBar__item" id="carte">Carte</a>
                 <a class="navBar__item" id="categories">Catégories</a>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" id="regions">Régions</a>
-                    <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" id="amanYlith">Aman Ylith</a>
-                        <a class="navBar__dropdownButton" id="karakUol">Karak Uol</a>
-                        <a class="navBar__dropdownButton" id="valBrise">Val-Brisé</a>
-                    </div>
-                </div>
-                <div class="navBar__dropdown">
-                    <a class="navBar__item" id="villes">Villes</a>
-                    <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" id="eauclaire">Eauclaire</a>
-                        <a class="navBar__dropdownButton" id="havregel">Havregel</a>
-                        <a class="navBar__dropdownButton" id="thaldrassin">Thaldrassin</a>
-                        <a class="navBar__dropdownButton" id="valimar">Valimar</a>
-                    </div>
-                </div>
-                <div class="navBar__dropdown">
                     <a class="navBar__item" id="lieux">Lieux</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" id="lorebois">Lorebois</a>
+                        <a class="button" id="regions">Regions</a>
+                        <a class="button" id="villes">Villes</a>
+                        <a class="button" id="villages">Villages</a>
                     </div>
                 </div>
                 <div class="navBar__dropdown">
                     <a class="navBar__item" id="personnages">Personnages</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" id="eol">Eol</a>
+                        <a class="button" id="divinites">Divinites</a>
                     </div>
                 </div>
             </nav>
-        </div>
+        </header>
         <main>
-            <section class="gloss">
-                <div class="gloss__section" id="regions">
-                    <header>
-                        <h1 class="article__title">
+            <section class="cat">
+                <div class="cat__div" id="lieuxAnchor">
+                    <h1 class="article__title">
+                        Lieux
+                    </h1>
+                    <div class="cat__subDiv" id="regionsAnchor">
+                        <h2 class="article__subtitle">
                             Régions
-                        </h1>
-                    </header>
-                    <div class="article__content">
-                        <a class="navBar__dropdownButton" id="amanYlith">Aman Ylith</a>
-                        <a class="navBar__dropdownButton" id="karakUol">Karak Uol</a>
-                        <a class="navBar__dropdownButton" id="valBrise">Val-Brisé</a>
+                        </h2>
+                        <div class="article__content">
+                            <a class="button" id="amanYlith">Aman Ylith</a>
+                            <a class="button" id="karakUol">Karak Uol</a>
+                            <a class="button" id="valBrise">Val-Brisé</a>
+                        </div>
                     </div>
-                </div>
-                <div class="gloss__section" id="villes">
-                    <header>
-                        <h1 class="article__title">
+                    <div class="cat__subDiv" id="villesAnchor">
+                        <h2 class="article__subtitle">
                             Villes
-                        </h1>
-                    </header>
-                    <div class="article__content">
-                        <a class="navBar__dropdownButton" id="eauclaire">Eauclaire</a>
-                        <a class="navBar__dropdownButton" id="havregel">Havregel</a>
-                        <a class="navBar__dropdownButton" id="thaldrassin">Thaldrassin</a>
-                        <a class="navBar__dropdownButton" id="valimar">Valimar</a>
+                        </h2>
+                        <div class="article__content">
+                            <a class="button" id="eauclaire">Eauclaire</a>
+                            <a class="button" id="havregel">Havregel</a>
+                            <a class="button" id="thaldrassin">Thaldrassin</a>
+                            <a class="button" id="valimar">Valimar</a>
+                        </div>
+                    </div>
+                    <div class="cat__subDiv" id="villagesAnchor">
+                        <h2 class="article__subtitle">
+                            Villages
+                        </h2>
+                        <div class="article__content">
+                            <a class="button" id="lorebois">Lorebois</a>
+                        </div>
                     </div>
                 </div>
-                <div class="gloss__section" id="lieux">
-                    <header>
-                        <h1 class="article__title">
-                            Lieux
-                        </h1>
-                    </header>
-                    <div class="article__content">
-                        <a class="navBar__dropdownButton" id="lorebois">Lorebois</a>
-                    </div>
-                </div>
-                <div class="gloss__section" id="personnages">
-                    <header>
-                        <h1 class="article__title">
-                            Personnes
-                        </h1>
-                    </header>
-                    <div class="article__content">
-                        <a class="navBar__dropdownButton" id="eol">Eol</a>
+                
+                <div class="cat__div" id="personnagesAnchor">
+                    <h2 class="article__title">
+                        Personnages
+                    </h2>
+                    <div class="cat__subDiv" id="divinitesAnchor">
+                        <h2 class="article__subtitle">
+                            Divinités
+                        </h2>
+                        <div class="article__content">
+                            <a class="button" id="eol">Eol</a>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -31,42 +31,27 @@
 
     </head>
     <body>
-        <div class="navHeader">
+        <header class="navHeader">
             <nav class="navBar">
                 <a class="navBar__item" id="ralThorin">Accueil</a>
                 <a class="navBar__item" id="carte">Carte</a>
                 <a class="navBar__item" id="categories">Catégories</a>
                 <div class="navBar__dropdown">
-                    <a class="navBar__item" id="regions">Régions</a>
-                    <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" id="amanYlith">Aman Ylith</a>
-                        <a class="navBar__dropdownButton" id="karakUol">Karak Uol</a>
-                        <a class="navBar__dropdownButton" id="valBrise">Val-Brisé</a>
-                    </div>
-                </div>
-                <div class="navBar__dropdown">
-                    <a class="navBar__item" id="villes">Villes</a>
-                    <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" id="eauclaire">Eauclaire</a>
-                        <a class="navBar__dropdownButton" id="havregel">Havregel</a>
-                        <a class="navBar__dropdownButton" id="thaldrassin">Thaldrassin</a>
-                        <a class="navBar__dropdownButton" id="valimar">Valimar</a>
-                    </div>
-                </div>
-                <div class="navBar__dropdown">
                     <a class="navBar__item" id="lieux">Lieux</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" id="lorebois">Lorebois</a>
+                        <a class="button" id="regions">Regions</a>
+                        <a class="button" id="villes">Villes</a>
+                        <a class="button" id="villages">Villages</a>
                     </div>
                 </div>
                 <div class="navBar__dropdown">
                     <a class="navBar__item" id="personnages">Personnages</a>
                     <div class="navBar__dropdownContent">
-                        <a class="navBar__dropdownButton" id="eol">Eol</a>
+                        <a class="button" id="divinites">Divinites</a>
                     </div>
                 </div>
             </nav>
-        </div>
+        </header>
         <main>
             <article>
                 <header>
@@ -75,42 +60,50 @@
                     </h1>
                 </header>
                 <section class="article__content">
-                    <p>
-                        Lorebois est un village de bucheron d'une centaine habitants, avec une diversité de nains, humains et gnomes, à l'orée ouest de la forêt de Loraeil, là d'où sort la rivière de La Ronce, en <a id="valBrise">Val-Brisé</a>.
-                    </p>
-                    <p>
-                        Lorebois compte notamment, une scierie, une taverne, une forge, un magasin de fournitures générales, un orphelinat et un poste de gardes.
-                    </p>
-                    <h2 class="article__subtitle">
-                        La Scierie de Bois-Sombre
-                    </h2>
-                    <p>
-                        La scierie de Bois-Sombre est au cœur de l'économie du village. Fondée en <a id="valBrise">Val-Brisé</a> il y a presque 300 ans, par le nain Balgruf Bois-Sombre, un entrepreneur au sens de l'orientation douteux de Faerun ayant entendu parler d'immenses forêts regorgeant d'arbres centenaires de <a id="amanYlith">Aman Ylith</a>.
-                    </p>
-                    <p>
-                        D'abord un petit camp de bucherons s'étant installé près d'un cour d'eau, c'est maintenant une entreprise reconnue dans la région, au cœur de l'économie du village de Lorebois et source de bois de qualité, prisés par les aristocrates de <a id="valBrise">Val-Brisé</a>.
-                    </p>
-                    <p>
-                        Les rondins coupés dans le bois de Loraeil sont déposés dans La Ronce, récupérés par la scierie en aval, puis sciés grâces aux mécanismes alimentés par des moulins à eau. Les planches sont ensuite transportés par bateaux, partant encore une fois le long de la rivière.
-                    </p>
-                    <h2 class="article__subtitle">
-                        Au Bois Cendré
-                    </h2>
-                    <p>
-                        La taverne du Bois Cendré est une petite taverne située au centre du village de Lorebois. Tenue par une famille gnome depuis sa fondation, c'est maintenant Felgim Dungen, fils du fondateur Felver Courtedescente, qui tient le bar.
-                    </p>
-                    <p>
-                        La taverne dispose de quelques tables, d'un bar et d'une cheminée. Elle est décorée de divers trophées de chasse et sculptures en bois représentant des animaux (faites par le père du patron) et un grand tapis beige poussiéreux se trouve au centre de la pièce.
-                    </p>
-                    <p>
-                        On y trouve les habitués du coin, des bucherons ou ouvriers de scierie pour la plupart, et l'occasionnel voyageur.
-                    </p>
-                    <h2 class="article__subtitle">
-                        Orphelinat de Lorebois
-                    </h2>
-                    <p>
-                        L'orphelinat de Lorebois prend place dans un des édifices les plus ancien du village. Fondé et tenu par Feanor et Trixie Larance, deux humaines ayant vécues toute leur vie à Lorebois, suite aux disparitions grandissantes de bucherons dans le bois de Loraeil ayant entraîné l'augmentation soudaine d'orphelins.
-                    </p>
+                    <div class="article__div">
+                        <p>
+                            Lorebois est un village de bucheron d'une centaine habitants, avec une diversité de nains, humains et gnomes, à l'orée ouest de la forêt de Loraeil, là d'où sort la rivière de La Ronce, en <a id="valBrise">Val-Brisé</a>.
+                        </p>
+                        <p>
+                            Lorebois compte notamment, une scierie, une taverne, une forge, un magasin de fournitures générales, un orphelinat et un poste de gardes.
+                        </p>
+                    </div>
+                    <div class="article__div">
+                        <h2 class="article__subtitle">
+                            La Scierie de Bois-Sombre
+                        </h2>
+                        <p>
+                            La scierie de Bois-Sombre est au cœur de l'économie du village. Fondée en <a id="valBrise">Val-Brisé</a> il y a presque 300 ans, par le nain Balgruf Bois-Sombre, un entrepreneur au sens de l'orientation douteux de Faerun ayant entendu parler d'immenses forêts regorgeant d'arbres centenaires de <a id="amanYlith">Aman Ylith</a>.
+                        </p>
+                        <p>
+                            D'abord un petit camp de bucherons s'étant installé près d'un cour d'eau, c'est maintenant une entreprise reconnue dans la région, au cœur de l'économie du village de Lorebois et source de bois de qualité, prisés par les aristocrates de <a id="valBrise">Val-Brisé</a>.
+                        </p>
+                        <p>
+                            Les rondins coupés dans le bois de Loraeil sont déposés dans La Ronce, récupérés par la scierie en aval, puis sciés grâces aux mécanismes alimentés par des moulins à eau. Les planches sont ensuite transportés par bateaux, partant encore une fois le long de la rivière.
+                        </p>
+                    </div>
+                    <div class="article__div">
+                        <h2 class="article__subtitle">
+                            Au Bois Cendré
+                        </h2>
+                        <p>
+                            La taverne du Bois Cendré est une petite taverne située au centre du village de Lorebois. Tenue par une famille gnome depuis sa fondation, c'est maintenant Felgim Dungen, fils du fondateur Felver Courtedescente, qui tient le bar.
+                        </p>
+                        <p>
+                            La taverne dispose de quelques tables, d'un bar et d'une cheminée. Elle est décorée de divers trophées de chasse et sculptures en bois représentant des animaux (faites par le père du patron) et un grand tapis beige poussiéreux se trouve au centre de la pièce.
+                        </p>
+                        <p>
+                            On y trouve les habitués du coin, des bucherons ou ouvriers de scierie pour la plupart, et l'occasionnel voyageur.
+                        </p>
+                    </div>
+                    <div class="article__div">
+                        <h2 class="article__subtitle">
+                            Orphelinat de Lorebois
+                        </h2>
+                        <p>
+                            L'orphelinat de Lorebois prend place dans un des édifices les plus ancien du village. Fondé et tenu par Feanor et Trixie Larance, deux humaines ayant vécues toute leur vie à Lorebois, suite aux disparitions grandissantes de bucherons dans le bois de Loraeil ayant entraîné l'augmentation soudaine d'orphelins.
+                        </p>
+                    </div>
                 </section>
             </article>
         </main>
