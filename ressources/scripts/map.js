@@ -21,7 +21,9 @@ valimar.bindPopup("<a href='/categories/lieux/villes/valimar/'>Valimar</a>").ope
 const thaldrassin = L.marker([528, 1846]).addTo(map);
 thaldrassin.bindPopup("<a href='/categories/lieux/villes/thaldrassin/'>Thaldrassin</a>").openPopup();
 const eauclaire = L.marker([625, 1696]).addTo(map);
-eauclaire.bindPopup("<a href='/categories/lieux/villes/eauclaire/'>Eauclaire</a>").openPopup();
+eauclaire.bindPopup("<a href='/categories/lieux/villes/eauclaire/'>Lorebois</a>").openPopup();
+const lorebois = L.marker([525, 1118]).addTo(map);
+lorebois.bindPopup("<a href='/categories/lieux/villages/lorebois/'>Lorebois</a>").openPopup();
 
 map.fitBounds(bounds);
 
