@@ -26,7 +26,7 @@ const havregel = L.marker([1285, 910]).addTo(map);
 havregel.bindPopup("<a href='/categories/lieux/villes/havregel/'>Havregel</a>").openPopup();
 
 const eauclaire = L.marker([625, 1696]).addTo(map);
-eauclaire.bindPopup("<a href='/categories/lieux/villes/eauclaire/'>Lorebois</a>").openPopup();
+eauclaire.bindPopup("<a href='/categories/lieux/villes/eauclaire/'>Eauclaire</a>").openPopup();
 
 const lorebois = L.marker([525, 1118]).addTo(map);
 lorebois.bindPopup("<a href='/categories/lieux/villages/lorebois/'>Lorebois</a>").openPopup();
