@@ -1,5 +1,46 @@
 @import url(/ressources/styles/fonts.css);
 
+@keyframes button_pop {
+    0% {
+        background-color: rgba(230, 230, 230, 0);
+        border-color: rgba(129, 129, 129, 0);
+        box-shadow: 4px 4px 5px #2e2e2e00;
+        color: rgba(0, 0, 0, 0);
+    }
+    50% {
+        background-color: rgba(230, 230, 230, 0.5);
+        border-color: rgba(129, 129, 129, 0.5);
+        box-shadow: 4px 4px 5px #2e2e2e41;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        background-color: rgba(230, 230, 230, 1);
+        border-color: rgb(129, 129, 129);
+        box-shadow: 4px 4px 5px #2e2e2e8d;
+        color: rgb(0, 0, 0);
+    }
+}
+@keyframes sub_button_pop {
+    0% {
+        background-color: #43281800;
+        border-color: #43281800;
+        box-shadow: 0px 0px 5px 5px #17171700;
+        color: rgba(255, 255, 255, 0);
+    }
+    50% {
+        background-color: #4328188a;
+        border-color: #43281879;
+        box-shadow: 0px 0px 5px 5px #17171749;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        background-color: #432a19d5;
+        border-color: #432818e4;
+        box-shadow: 0px 0px 5px 5px #1717178d;
+        color: rgb(255, 255, 255);
+    }
+}
+
 body {
     background-color:rgb(176, 176, 176);
     background-image: url(/ressources/img/mapBackground_2048.webp);
@@ -40,16 +81,17 @@ body {
     text-decoration: none;
     font-size: 23px;
     color: rgb(0, 0, 0);
-    background-color: inherit;
     padding: 0.4rem;
     border: 1px solid;
-    border-radius: 3px;
-    border-color: rgb(129, 129, 129);
-    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-left: 0.06em;
+    border-color: rgb(83, 55, 18);
     cursor: pointer;
     box-shadow: 4px 4px 5px #2e2e2e8d;
+    animation: button_pop 0.15s linear;
+    background-color: white;
 }
-.button:hover { background-color: rgb(230, 230, 230);}
+.button:hover { background-color: #e9e9e9;}
 .button:active { transform: translate3d(1px, 1px, 0)}
 
 
@@ -79,6 +121,7 @@ body {
     width: 100%;
 } .navBar__subDropdown a {width: 100%;}
 
+
 .navBar__subContent {
     display: none;
     position: absolute;
@@ -95,13 +138,15 @@ body {
 
 .navBar__subDropdown > .button {
     color: white;
+    margin-left:initial;
     border: 1px solid;
-    border-radius: 3px;
+    border-radius: 5px;
     border-color: #432818e4;
     background-color: #432a19d5;
     box-shadow: 0px 0px 5px 5px #1717178d;
     cursor:context-menu;
     padding: 0.3em 1em 0.3em 1em;
+    animation: sub_button_pop 0.2s linear;
 }
 
 article, .cat {
