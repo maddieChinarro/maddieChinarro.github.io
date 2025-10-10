@@ -1,19 +1,13 @@
 @import url(/ressources/styles/fonts.css);
 
 @keyframes button_pop {
-    0% {
+    from {
         background-color: rgba(230, 230, 230, 0);
         border-color: rgba(129, 129, 129, 0);
         box-shadow: 4px 4px 5px #2e2e2e00;
         color: rgba(0, 0, 0, 0);
     }
-    50% {
-        background-color: rgba(230, 230, 230, 0.5);
-        border-color: rgba(129, 129, 129, 0.5);
-        box-shadow: 4px 4px 5px #2e2e2e41;
-        color: rgba(0, 0, 0, 0.5);
-    }
-    100% {
+    to {
         background-color: rgba(230, 230, 230, 1);
         border-color: rgb(129, 129, 129);
         box-shadow: 4px 4px 5px #2e2e2e8d;
@@ -21,19 +15,13 @@
     }
 }
 @keyframes sub_button_pop {
-    0% {
+    from {
         background-color: #43281800;
         border-color: #43281800;
         box-shadow: 0px 0px 5px 5px #17171700;
         color: rgba(255, 255, 255, 0);
     }
-    50% {
-        background-color: #4328188a;
-        border-color: #43281879;
-        box-shadow: 0px 0px 5px 5px #17171749;
-        color: rgba(255, 255, 255, 0.5);
-    }
-    100% {
+    to {
         background-color: #432a19d5;
         border-color: #432818e4;
         box-shadow: 0px 0px 5px 5px #1717178d;
@@ -277,6 +265,14 @@ footer {
         box-shadow: none;
     }
 
+    .article__content {
+        align-items: center;
+    }
+
+    .button {
+        width: fit-content;
+    }
+
     .cat {
         margin: 0;
         padding-bottom: 3rem;
@@ -302,6 +298,5 @@ footer {
         padding: 0;
         margin: 0.5rem;
     }
-    
-    .socials {height: 1rem;}
+
 }
